@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-
-import Footer from '../../components/footer/Footer';
 import CareersPage from './CareersPage';
 
 const Careers = () => {
@@ -12,8 +10,7 @@ const Careers = () => {
       {/* ServicesPage content */}
       <CareersPage />
 
-      {/* Footer at the bottom */}
-<Footer />
+
     </div>
   );
 };

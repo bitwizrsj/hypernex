@@ -24,12 +24,14 @@ export default function Navbar() {
     <>
       <div className="h-20 bg-slate-50 flex items-center justify-between px-6 lg:px-12 shadow-md z-50">
         {/* Brand */}
+        <a href="./">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="logo" className="w-10 "></img>
-          <h1 className="text-gray-950 font-bold text-2xl font-sans hidden md:block tracking-tighter">
+          <h1 className="text-gray-950 font-bold text-2xl font-sans  md:block tracking-tighter">
             HyperNex Technologies
           </h1>
         </div>
+        </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-6">
           {navbarLinks.map((link, index) => (

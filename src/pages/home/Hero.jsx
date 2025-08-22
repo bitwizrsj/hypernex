@@ -161,12 +161,12 @@ const Hero = () => {
                             <ArrowRight className="w-4 h-4 text-yellow-400" />
                         </Button>
                     </Link>
-                    <Link to="/portfolio">
+                    <Link to="/contact">
                         <Button
                             variant="outline"
                             className="px-8 py-6 h-20 rounded-full flex items-center"
                         >
-                            View our work
+                            Contact Us
                         </Button>
                     </Link>
                 </div>

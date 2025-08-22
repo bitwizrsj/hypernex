@@ -9,7 +9,8 @@ const Works = () => {
   const categories = [
     { name: 'Web Design' },
     { name: 'Webflow Development' },
-    { name: 'Mobile App Design' },
+    { name: 'Mobile App' },
+    { name: '3D Website' },
   ];
 
   const projects = [
@@ -17,37 +18,43 @@ const Works = () => {
       title: 'Sentry X ',
       category: 'Web Design',
       image: 'https://img.freepik.com/free-vector/gradient-abstract-technology-landing-page_23-2149140002.jpg',
-      tags: ['Web Design', 'Webflow Development'],
+      tags: [ 'Webflow Development'],
     },
     {
-      title: 'Apple Watch ',
+      title: '3D Website ',
+      category: '3D Website',
+      image: 'https://img.freepik.com/free-vector/gradient-color-year-2022-landing-page-template_23-2149277396.jpg?uid=R147516762&ga=GA1.1.1201296678.1714120734&semt=ais_hybrid&w=740',
+      tags: [ '3D Website'],
+    },
+    {
+      title: 'Watch ',
       category: 'Web Design',
       image: 'https://img.freepik.com/free-vector/technology-landing-page-template-with-photo_52683-21231.jpg',
-      tags: ['Webflow Development', '3D', 'Creative Website'],
+      tags: ['Webflow Development', 'Web Design', '3D', 'Creative Website'],
     },
     {
       title: 'Concert Website',
       category: 'Web Design',
       image: 'https://img.freepik.com/free-vector/live-concert-landing-page-template_23-2150997999.jpg',
-      tags: ['Creative Website', 'Animation'],
+      tags: ['Creative Website', 'Web Design', 'Animation'],
     },
 
     {
       title: 'E-commerce Platform',
       category: 'Web Design',
       image: 'https://img.freepik.com/free-vector/futuristic-shoeshop_23-2149215484.jpg',
-      tags: ['E-commerce', 'Responsive Design'],
+      tags: ['E-commerce', 'Web Design', 'Responsive Design'],
     },
     {
       title: 'Mobile Banking App',
       category: 'Mobile App Design',
-      image: 'https://img.freepik.com/free-vector/banking-template-design_52683-146003.jpg',
+      image: 'https://img.freepik.com/premium-vector/banking-app-landing-page-mobile-payment-financial-account-smartphone-ui-online-bank-application-vector-realistic-website-interface-with-copy-space-button-download_176516-3509.jpg?ga=GA1.1.982437852.1735106258&semt=ais_hybrid',
       tags: ['Mobile App', 'Banking'],
     },
     {
       title: 'Fitness Tracker App',
       category: 'Mobile App Design',
-      image: 'https://img.freepik.com/free-vector/sport-landing-page-with-photo_23-2148362702.jpg',
+      image: 'https://img.freepik.com/free-vector/flat-woman-using-smartphone-with-pedometer-counting-steps_88138-943.jpg?t=st=1737466691~exp=1737470291~hmac=98a2f1391a5cb55ca15a7b8465b1ed274fe5edaf787921ad17061b4c0ad4c20c&w=1380',
       tags: ['Mobile App', 'Health'],
     },
     {
@@ -60,7 +67,7 @@ const Works = () => {
       title: 'Studio Portfolio',
       category: 'Web Design',
       image: 'https://img.freepik.com/free-vector/landing-page-template-photographer-career-hobby_23-2150306818.jpg',
-      tags: ['Portfolio', 'Creative Website'],
+      tags: ['Portfolio', 'Web Design', 'Creative Website'],
     },
   ];
 
@@ -73,8 +80,8 @@ const Works = () => {
           : 'hover:bg-black/5 text-black dark:hover:bg-white/10 border-white border-2 dark:text-white'
       } h-16 sm:h-20 md:h-auto flex items-center justify-center dog`}
     >
-      <div className="flex justify-between items-center relative z-10 w-full">
-        <span className="font-medium">{category.name}</span>
+      <div className="flex h-full justify-between items-center relative z-10 w-full">
+        <span className="font-medium my-auto">{category.name}</span>
       </div>
     </button>
   );
@@ -140,7 +147,7 @@ const Works = () => {
             {/* Display projects with different layouts depending on screen size */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 py-4">
               {projects
-                .filter((project) => project.category === activeCategory)
+                .filter((project) => project.tags.includes(activeCategory))
                 .map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}

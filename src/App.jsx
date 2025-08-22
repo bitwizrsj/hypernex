@@ -11,6 +11,11 @@ import Services from './pages/services/Services.jsx';
 import Careers from './pages/Careers/Careers.jsx';
 import Portfolio from './pages/portfolio/Portfolio.jsx';
 import ProjectDiscussion from './pages/discuss/ProjectDiscussion.jsx';
+import PrivacyPolicy2050 from './pages/Privacy-policy.jsx';
+import MicrosoftStyleTermsAndConditions from './pages/TermsAndConditions.jsx';
+import CancellationPolicy from './pages/CancellationPolicy.jsx';
+import ShippingPolicy from './pages/Shipping.jsx';
+import Contact from './pages/Contact.jsx';
 
 
 function App() {
@@ -27,6 +32,11 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/discuss" element={<ProjectDiscussion />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy2050 />} />
+          <Route path="/terms-and-conditions" element={<MicrosoftStyleTermsAndConditions />} />
+          <Route path='/cancellation-and-refunds' element={<CancellationPolicy />} />
+          <Route path='/shipping-and-delivery' element={<ShippingPolicy />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Layout>
     </Router>

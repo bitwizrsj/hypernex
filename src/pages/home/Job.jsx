@@ -69,16 +69,7 @@ const DarkCareersSection = () => {
                     </button>
                 </div>
 
-                {/* Additional Link */}
-                <div className="mt-8 text-center">
-                    <a
-                        href="/culture"
-                        className="inline-flex items-center text-gray-400 hover:text-yellow-400 transition-colors duration-300"
-                    >
-                        Discover our culture
-                        <ChevronRight className="w-4 h-4 ml-1" />
-                    </a>
-                </div>
+                
             </div>
 
             <style jsx>{`

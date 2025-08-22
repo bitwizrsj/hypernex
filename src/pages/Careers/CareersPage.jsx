@@ -164,15 +164,7 @@ const CareersPage = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 text-center">
-          <h2 className="text-2xl font-semibold mb-4">Don't see a perfect fit?</h2>
-          <p className="text-gray-400 mb-6">
-            We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
-          </p>
-          <button className="px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
-            Send General Application
-          </button>
-        </div>
+        
       </div>
     </div>
   );

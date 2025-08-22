@@ -14,7 +14,7 @@ const Footer = () => {
     { name: "Instagram", url: "https://www.instagram.com/hype.rnextechnologies/" },
     { name: "Twitter", url: "https://x.com/hyperNexTech" },
     { name: "LinkedIn", url: "https://www.linkedin.com/company/hypernex-technologies-llc/?viewAsMember=true" },
-    { name: "Dribbble", url: "#" }
+
   ];
 
   return (
@@ -75,19 +75,22 @@ const Footer = () => {
               >
                 info@hypernextechnologies.com
               </a>
-              <div>
+              {/* <div>
                 <p className="text-gray-400">Phone: <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 307-213-1361</a></p>
-              </div>
+              </div> */}
               <div>
                 <p className="text-gray-400">Address: 30 N Gould St Ste R,
                 Sheridan, WY 82801, USA</p>
               </div>
-              <button 
-                className="bg-white text-gray-950 px-6 py-3 rounded-full hover:bg-gray-200 transition-colors flex items-center group"
-              >
-                Discuss the project
-                <ArrowUpRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </button>
+              
+              <a 
+  href="/discuss" 
+  className="bg-white text-gray-950 px-6 py-3 rounded-full hover:bg-gray-200 transition-colors flex items-center group"
+>
+  Discuss the project
+  <ArrowUpRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+</a>
+
             </div>
           </div>
         </div>
@@ -95,12 +98,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2024 Creating. All rights reserved.
+            © 2025 Creating. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/cancellation-and-refunds" className="hover:text-white transition-colors">Cancellation and Refund</a>
           </div>
         </div>
       </div>

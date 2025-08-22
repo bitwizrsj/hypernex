@@ -90,10 +90,7 @@ const PortfolioPage = () => {
         {/* Recent Projects Section */}
         <section className="mb-24">
           <h2 className="text-2xl font-mono mb-4">Recent Projects</h2>
-          <p className="text-gray-400 font-mono mb-8">
-            Over the past 10 years, I have developed projects of various kinds such as Blogs, CMS, company
-            websites, funding platforms, and Android+iOS apps.
-          </p>
+      
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {recentProjects.map((project) => (
               <motion.div
@@ -143,10 +140,7 @@ const PortfolioPage = () => {
         {/* Featured Portfolio Section */}
         <section className="mb-24">
           <h2 className="text-2xl font-mono mb-4">Featured Portfolio</h2>
-          <p className="text-gray-400 font-mono mb-8">
-            I designed and developed these showcase projects with Figma, Spline, React, and ThreeJS in 2024.
-            Various 3D elements/scenes are tailor-made to create more absorbing user experiences.
-          </p>
+         
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredPortfolio.map((project) => (
               <motion.div

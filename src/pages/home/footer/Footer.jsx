@@ -75,9 +75,9 @@ const Footer = () => {
               >
                 info@hypernextechnologies.com
               </a>
-              <div>
+              {/* <div>
                 <p className="text-gray-400">Phone: <a href="tel:+1234567890" className="hover:text-white transition-colors">+1 307-213-1361</a></p>
-              </div>
+              </div> */}
               <div>
                 <p className="text-gray-400">Address: 30 N Gould St Ste R,
                 Sheridan, WY 82801, USA</p>
@@ -98,7 +98,7 @@ const Footer = () => {
             © 2024 Creating. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
           </div>
